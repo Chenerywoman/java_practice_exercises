@@ -39,6 +39,11 @@ public class ShapesTest {
     }
 
     @Test
+    public void getSquareShape(){
+        assertEquals("This is a square shape", mySquare.printShape());
+    }
+
+    @Test
     public void getShapeShape(){
         assertEquals("This is a shape", myShape.printShape());
     }
