@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class ShapesTest {
 
     Rectangle myRectangle = new Rectangle(5, 8);
+    Square mySquare = new Square(10);
 
     @Test
     public void getRectangleArea(){
@@ -17,7 +18,17 @@ public class ShapesTest {
 
     @Test
     public void getRectanglePerimeter(){
-        assertEquals(26, myRectangle.getPermimeter());
+        assertEquals(26, myRectangle.getPerimeter());
+    }
+
+    @Test
+    public void getSquareArea(){
+        assertEquals(100, mySquare.getArea());
+    }
+
+    @Test
+    public void getSquarePerimeter(){
+        assertEquals(40, mySquare.getPerimeter());
     }
 
 }
