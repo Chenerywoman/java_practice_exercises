@@ -11,6 +11,7 @@ public class ShapesTest {
     Rectangle myRectangle = new Rectangle(5, 8);
     Square mySquare = new Square(10);
     Shape myShape = new Shape();
+    Circle myCircle = new Circle(7);
 
     @Test
     public void getRectangleArea(){
@@ -35,6 +36,11 @@ public class ShapesTest {
     @Test
     public void getShapeShape(){
         assertEquals("This is a shape", myShape.printShape());
+    }
+
+    @Test
+    public void getCircleShape(){
+        assertEquals("This is a circle shape",myCircle.printShape());
     }
 
 
