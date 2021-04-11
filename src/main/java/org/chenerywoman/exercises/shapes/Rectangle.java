@@ -1,6 +1,6 @@
 package org.chenerywoman.exercises.shapes;
 
-public class Rectangle {
+public class Rectangle extends Shape{
 
     private int length;
     private int width;
@@ -24,6 +24,11 @@ public class Rectangle {
 
     public int getPerimeter(){
         return this.length * 2 + this.width * 2;
+    }
+
+    @Override
+    public String printShape(){
+        return "This is a rectangle shape";
     }
 
 

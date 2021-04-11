@@ -24,6 +24,11 @@ public class ShapesTest {
     }
 
     @Test
+    public void printRectangleShape(){
+        assertEquals("This is a rectangle shape", myRectangle.printShape());
+    }
+
+    @Test
     public void getSquareArea(){
         assertEquals(100, mySquare.getArea());
     }
@@ -42,6 +47,7 @@ public class ShapesTest {
     public void getCircleShape(){
         assertEquals("This is a circle shape",myCircle.printShape());
     }
+
 
 
 }
