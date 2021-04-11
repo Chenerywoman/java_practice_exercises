@@ -10,6 +10,7 @@ public class ShapesTest {
 
     Rectangle myRectangle = new Rectangle(5, 8);
     Square mySquare = new Square(10);
+    Shape myShape = new Shape();
 
     @Test
     public void getRectangleArea(){
@@ -30,5 +31,11 @@ public class ShapesTest {
     public void getSquarePerimeter(){
         assertEquals(40, mySquare.getPerimeter());
     }
+
+    @Test
+    public void getShapeShape(){
+        assertEquals("This is a shape", myShape.printShape());
+    }
+
 
 }
